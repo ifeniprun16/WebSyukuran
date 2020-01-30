@@ -17,7 +17,10 @@ if(isset($_POST['submit'])){
     // apakah query simpan berhasil?
     if( $query ) {
         // kalau berhasil alihkan ke halaman index.php dengan status=sukses
-        header('Location: index.php');
+        // header('Location: index.php');
+        
+        header('Location: index.php?name='.$nama);
+        
     } else {
         // kalau gagal alihkan ke halaman indek.php dengan status=gagal
         header('Location: index.php');
