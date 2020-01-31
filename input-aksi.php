@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $sepatah_kata = $_POST['sepatah_kata'];
 
     // buat query
-    $sql = "INSERT INTO buku_tamu (nama, asal_lab,sepatah_kata) VALUE ('$nama', '$asal_lab','$sepatah_kata')";
+    $sql = "INSERT INTO buku_tamu(nama, asal_lab,sepatah_kata) VALUE ('$nama', '$asal_lab','$sepatah_kata')";
     $query = mysqli_query($db, $sql);
 
     // apakah query simpan berhasil?
